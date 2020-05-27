@@ -1,9 +1,7 @@
 package br.com.fiap.action;
  
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -88,31 +86,30 @@ public class VendaAction extends HttpServlet {
     }
     
     
-    protected void adicionar(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
- 
-        venda = new VendaTO();
-		
-        venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
-        venda.setNome(req.getParameter("txtNomeCliente"));
-        venda.setDtVenda(Calendar.getInstance());
-        venda.setDescricao(req.getParameter("txtDesc"));
-        venda.setValor(Double.parseDouble(req.getParameter("txtVl")));
-        venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
-        
-        vbo = new VendaBO();
-        vbo.cadastrar(venda);
-        
-        req.setAttribute("controle", "lista-vendas");
- 
-        req.setAttribute("action-frm", "adicionar");
-        
-        req.getRequestDispatcher("listagem").forward(req, res);
-        
-        
+	    protected void adicionar(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+	 
+	        venda = new VendaTO();
+			
+	        venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
+	        venda.setNome(req.getParameter("txtNomeCliente"));
+	        venda.setDtVenda(Calendar.getInstance());
+	        venda.setDescricao(req.getParameter("txtDesc"));
+	        venda.setValor(Double.parseDouble(req.getParameter("txtVl")));
+	        venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
+	        
+	        vbo = new VendaBO();
+	        vbo.cadastrar(venda);
+	        
+	        req.setAttribute("controle", "lista-vendas");
+	 
+	        req.setAttribute("action-frm", "adicionar");
+	        
+	        req.getRequestDispatcher("listagem").forward(req, res);
+	        
     }
     
     
-    protected void alterar (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void alterar(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
  
     	  venda = new VendaTO();
           //venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
@@ -134,7 +131,7 @@ public class VendaAction extends HttpServlet {
     }
     
     
-    protected void remover (HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void remover(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
  
         int cod = Integer.parseInt(req.getParameter("codProd"));
         

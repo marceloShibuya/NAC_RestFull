@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="br.com.fiap.to.VendaTO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
@@ -11,4 +10,6 @@
 <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.utils.URI"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.http.parser.MediaType"/>
 <fullyQualifiedTypeName name="javax.ws.rs.client.Client"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

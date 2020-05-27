@@ -24,9 +24,15 @@
 						value="${vendaObj.nome}">
 				</div>
 				<div>
+					<label for="idDtVenda">Data da venda</label> <input
+						type="text" id="idDtVenda" name="txtDtVenda" required="required"
+						placeholder="Digite a data da venda"
+						value="${vendaObj.dtVenda}">
+				</div>
+				<div>
 					<label for="idQtdProd">Descrição da venda</label> <input
 						type="text" id="idQtdProd" name="txtDesc" required="required"
-						placeholder="Digite a quantidade do produto"
+						placeholder="Digite a descrição do produto"
 						value="${vendaObj.descricao}">
 				</div>
 				<div>
@@ -34,6 +40,12 @@
 						id="idVlProd" name="txtVl" required="required"
 						placeholder="Digite o valor da venda"
 						value="${vendaObj.valor}">
+				</div>
+				<div>
+					<label for="idStatus">Pago</label> <input type="text"
+						id="idStatus" name="txtSituacaoPag" required="required"
+						placeholder="Digite sim ou não"
+						value="${vendaObj.status}">
 				</div>
 				<div>
 					<input type="submit" value="Cadastrar">
@@ -45,12 +57,12 @@
 	<c:if test="${controle != null}">
 		<table>
 			<tr>
-				<th>NOME</th>
-				<th>DATA VENDA</th>
+				<th>CLIENTE</th>
+				<th>DATA</th>
 				<th>DESCRIÇÃO</th>
-				<th>VALOR DA VENDA</th>
-				<th>STATUS DA VENDA</th>
-				<th colspan="2">EDITAR</th>
+				<th>VALOR</th>
+				<th>PAGO</th>
+				<th colspan="2">OPÇÕES</th>
 
 			</tr>
 			<c:forEach var="v" items="${listaVendas}" varStatus="id">
