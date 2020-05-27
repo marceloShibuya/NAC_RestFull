@@ -3,16 +3,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="../css/style-base.css" type="text/css">
+<link rel="stylesheet" href="./css/style-base.css" type="text/css">
 <title>VENDAS</title>
 </head>
 <body>
-	<div>
+	<div class="main">
 		<form class="frm-1" action="${action_frm == null ? 'adicionar' : action_frm}" method="get">
 			<fieldset>
 				<legend>Cadastro das vendas</legend>
@@ -27,29 +28,29 @@
 				<div>
 					<label for="idDtVenda">Data da venda</label> <input
 						type="text" id="idDtVenda" name="txtDtVenda" required="required"
-						placeholder="Digite a data da venda" 
+						placeholder="Ex:. 2020/12/30" 
 						value="${vendaObj.dtVenda}">
 				</div>
 				<div>
 					<label for="idQtdProd">Descrição da venda</label> <input
 						type="text" id="idQtdProd" name="txtDesc" required="required"
-						placeholder="Digite a descrição do produto" 
+						placeholder="Digite o produto" 
 						value="${vendaObj.descricao}">
 				</div>
 				<div>
 					<label for="idVlProd">Preço da venda</label> <input type="text"
 						id="idVlProd" name="txtVl" required="required"
-						placeholder="Digite o valor da venda"
+						placeholder="Valor da venda"
 						value="${vendaObj.valor}">
 				</div>
 				<div>
 					<label for="idStatus">Pago</label> <input type="text"
 						id="idStatus" name="txtSituacaoPag" required="required"
-						placeholder="Digite sim ou não"
+						placeholder="True ou False"
 						value="${vendaObj.status}">
 				</div>
 				<div>
-					<input type="submit" value="Cadastrar">
+					<input class="cadastrar" type="submit" value="Cadastrar">
 				</div>
 			</fieldset>
 		</form>
@@ -71,12 +72,12 @@
 					<td>${v.nome}</td>
 					<td><fmt:formatDate pattern="yyyy/MM/dd" value="${v.dtVenda.time}"/></td>
 					<td>${v.descricao}</td>
-					<td>${v.valor}</td>
+					<td>R$ ${v.valor}0</td>
 					<td>${v.status}</td>
 					<td class="edit-td"><a href="listar?codProd=${v.codigo}"><img
-							src="./img/editar.png"></a></td>
+							src="./img/lupa.png"></a></td>
 					<td class="edit-td"><a href="remover?codProd=${v.codigo}"><img
-							src="./img/excluir.png"></a></td>
+							src="./img/apagar.png"></a></td>
 				</tr>
 			</c:forEach>
 

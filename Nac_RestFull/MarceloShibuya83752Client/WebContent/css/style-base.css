@@ -1,43 +1,100 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap')
+	;
+
+* {
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  padding: 2em;
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	padding: 2em;
 }
 
-h1, h2, h3{
-  margin: 20px 10px;
+h1, h2, h3 {
+	margin: 20px 10px;
 }
 
-img{
-	width: 30%;
+img {
+	width: 10%;
 }
 
-table{
-	margin:auto;
+table {
+	margin: auto;
 	border-collapse: collapse;
-	border:solid 2px #000040;
+	border: solid 2px #000040;
 	padding: 1em;
 	width: 100%;
+	text-align: center;
 }
 
-table th,td{
-	border:solid 2px #000040;
-	
+table th, td {
+	border: solid 2px #000040;
+	align-items: center;
 }
 
-.edit-td{
+table th{
+	background-color: #ed145b;
+	color: #fff;
+}
+
+table td{
+	font-weight: bold;
+}
+
+.edit-td {
 	padding-left: 4%;
-	
+	width: 15%;
+	text-align: center;
 }
 
-img{
-	width: 50%;
+.main{
+	text-align:center; 
+}
+
+form {
+	width: 500px;
+	margin: auto;
+}
+
+label {
+	display: block;
+	justify-content: start;
+	color: #ed145b;
+	font-weight: bold;
+}
+
+input, textarea {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255, 255, 255, .8);
+	margin-bottom: 10px;
+	text-align:center; 
+}
+
+input:hover, textarea:hover {
+	color: #000000;
+}
+
+.cadastrar{
+	background-color: #ed145b;
+	color: #fff;
+}
+
+legend {
+	color: #000000;
+	font-weight: bold;
+	font-size: 15pt;
+	font-family: sans-serif;
+}
+
+fieldset {
+	border-color: #cecece;
+	margin: 20px;
 }

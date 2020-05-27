@@ -16,34 +16,34 @@ public class VendaDAO {
         if(listaVendas == null) {
             listaVendas = new ArrayList<VendaTO>();
             
-            VendaTO vto = new VendaTO(1,"Pedro", new GregorianCalendar(2019,Calendar.DECEMBER,25), "Arvore de Natal",250.0, true);
+            VendaTO vto = new VendaTO(1,"Pedro", new GregorianCalendar(2019,Calendar.DECEMBER,25), "Arvore de Natal",1000.00, true);
             listaVendas.add(vto);
             
-            vto = new VendaTO(2,"Gustavo", new GregorianCalendar(2018,Calendar.JANUARY,02), "Celular",1500.0, true);
+            vto = new VendaTO(2,"Gustavo", new GregorianCalendar(2018,Calendar.JANUARY,02), "Celular",1500.00, true);
             listaVendas.add(vto);
             
-            vto = new VendaTO(3,"Marcelo", new GregorianCalendar(2020,Calendar.MARCH,21), "Caixa de Som",150.0, false);
+            vto = new VendaTO(3,"Marcelo", new GregorianCalendar(2020,Calendar.MARCH,21), "Caixa de Som",1990.00, false);
             listaVendas.add(vto);
             
-            vto = new VendaTO(4,"Felipe", new GregorianCalendar(2020,Calendar.APRIL,01), "Microfone",100.0, true);
+            vto = new VendaTO(4,"Felipe", new GregorianCalendar(2020,Calendar.APRIL,01), "Microfone",2099.00, true);
             listaVendas.add(vto);
             
-            vto = new VendaTO(5,"Luiz", new GregorianCalendar(2020,Calendar.MARCH,10), "Notebook",3990.0, false);
+            vto = new VendaTO(5,"Luiz", new GregorianCalendar(2020,Calendar.MARCH,10), "Notebook",3990.00, false);
             listaVendas.add(vto);
             
-            vto = new VendaTO(6,"Josefina", new GregorianCalendar(2020,Calendar.APRIL,20), "Estojo de Maquiagem",259.0, true);
+            vto = new VendaTO(6,"Josefina", new GregorianCalendar(2020,Calendar.APRIL,20), "Estojo de Maquiagem",3100.00, true);
             listaVendas.add(vto);
             
-            vto = new VendaTO(7,"Gabriel", new GregorianCalendar(2019,Calendar.NOVEMBER,30), "Capa de Celular",25.0, true);
+            vto = new VendaTO(7,"Gabriel", new GregorianCalendar(2019,Calendar.NOVEMBER,30), "Capa de Celular",1000.00, true);
             listaVendas.add(vto);
             
-            vto = new VendaTO(8,"Rafael", new GregorianCalendar(2020,Calendar.FEBRUARY,15), "TV 50'",2590.0, false);
+            vto = new VendaTO(8,"Rafael", new GregorianCalendar(2020,Calendar.FEBRUARY,15), "TV 50'",2590.00, false);
             listaVendas.add(vto);
             
-            vto = new VendaTO(9,"Emanuel", new GregorianCalendar(2019,Calendar.OCTOBER,03), "Fone de Ouvido",399.0, true);
+            vto = new VendaTO(9,"Emanuel", new GregorianCalendar(2019,Calendar.OCTOBER,03), "Fone de Ouvido",1699.00, true);
             listaVendas.add(vto);
             
-            vto = new VendaTO(10,"Maria", new GregorianCalendar(2019,Calendar.JULY,19), "Impressora",999.0, true);
+            vto = new VendaTO(10,"Maria", new GregorianCalendar(2019,Calendar.JULY,19), "Impressora",2599.00, true);
             listaVendas.add(vto);
         
         }
