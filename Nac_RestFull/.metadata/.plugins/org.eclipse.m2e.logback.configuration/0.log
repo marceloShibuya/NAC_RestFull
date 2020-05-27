@@ -1390,3 +1390,11 @@
 2020-05-27 17:30:09,492 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\MarceloShibuya83752Server\src\main\resources
 2020-05-27 17:30:09,493 [Worker-142: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-05-27 17:30:09,495 [Worker-142: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\MarceloShibuya83752Server\src\test\resources
+2020-05-27 17:46:22,199 [Worker-149: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-27 17:46:22,228 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\MarceloShibuya83752Client\src\main\resources
+2020-05-27 17:46:22,230 [Worker-149: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-27 17:46:22,232 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\MarceloShibuya83752Client\src\test\resources
+2020-05-27 17:47:54,849 [Worker-149: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-27 17:47:54,853 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\MarceloShibuya83752Client\src\main\resources
+2020-05-27 17:47:54,855 [Worker-149: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-27 17:47:54,859 [Worker-149: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\MarceloShibuya83752Client\src\test\resources
