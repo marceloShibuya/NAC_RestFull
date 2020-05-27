@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\User\Desktop\Nac_RestFull\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\User\Desktop\Nac_RestFull\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MarceloShibuya83752Server" path="/MarceloShibuya83752Server" reloadable="true" source="org.eclipse.jst.jee.server:MarceloShibuya83752Server"/></Host>
+      <Context docBase="C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MarceloShibuya83752Server" path="/MarceloShibuya83752Server" reloadable="true" source="org.eclipse.jst.jee.server:MarceloShibuya83752Server"/><Context docBase="C:\Users\User\Documents\GitHub\NAC_RestFull\Nac_RestFull\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MarceloShibuya83752Client" path="/MarceloShibuya83752Client" reloadable="true" source="org.eclipse.jst.jee.server:MarceloShibuya83752Client"/></Host>
     </Engine>
   </Service>
 </Server>
