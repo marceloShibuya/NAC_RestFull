@@ -1,7 +1,9 @@
 package br.com.fiap.action;
  
 import java.io.IOException;
-import java.util.Calendar;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -90,13 +92,18 @@ public class VendaAction extends HttpServlet {
 	 
 	        venda = new VendaTO();
 			
-	        venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
 	        venda.setNome(req.getParameter("txtNomeCliente"));
-	        venda.setDtVenda(Calendar.getInstance());
+	        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+	        GregorianCalendar cal = new GregorianCalendar();
+            try {
+				cal.setTime(df.parse(req.getParameter("txtDtVenda")));
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+	        venda.setDtVenda(cal);
 	        venda.setDescricao(req.getParameter("txtDesc"));
 	        venda.setValor(Double.parseDouble(req.getParameter("txtVl")));
 	        venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
-	        
 	        vbo = new VendaBO();
 	        vbo.cadastrar(venda);
 	        
@@ -112,12 +119,18 @@ public class VendaAction extends HttpServlet {
     protected void alterar(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
  
     	  venda = new VendaTO();
-          //venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
-            venda.setNome(req.getParameter("txtNomeCliente"));
-          //venda.setDtVenda(Calendar.getInstance());
-            venda.setDescricao(req.getParameter("txtDesc"));
-            venda.setValor(Double.parseDouble(req.getParameter("txtVl")));
-          //venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
+    	  venda.setNome(req.getParameter("txtNomeCliente"));
+	        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+	        GregorianCalendar cal = new GregorianCalendar();
+          try {
+				cal.setTime(df.parse(req.getParameter("txtDtVenda")));
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+	        venda.setDtVenda(cal);
+	        venda.setDescricao(req.getParameter("txtDesc"));
+	        venda.setValor(Double.parseDouble(req.getParameter("txtVl")));
+	        venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
         
         vbo = new VendaBO();
         vbo.atualizar(venda);

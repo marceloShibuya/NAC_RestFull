@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <!DOCTYPE html>
 <html>
@@ -26,13 +27,13 @@
 				<div>
 					<label for="idDtVenda">Data da venda</label> <input
 						type="text" id="idDtVenda" name="txtDtVenda" required="required"
-						placeholder="Digite a data da venda"
+						placeholder="Digite a data da venda" 
 						value="${vendaObj.dtVenda}">
 				</div>
 				<div>
 					<label for="idQtdProd">Descrição da venda</label> <input
 						type="text" id="idQtdProd" name="txtDesc" required="required"
-						placeholder="Digite a descrição do produto"
+						placeholder="Digite a descrição do produto" 
 						value="${vendaObj.descricao}">
 				</div>
 				<div>
@@ -57,8 +58,8 @@
 	<c:if test="${controle != null}">
 		<table>
 			<tr>
-				<th>CLIENTE</th>
-				<th>DATA</th>
+				<th>CLIENTE</th>	
+				<th>DATA</th>			
 				<th>DESCRIÇÃO</th>
 				<th>VALOR</th>
 				<th>PAGO</th>
@@ -68,7 +69,7 @@
 			<c:forEach var="v" items="${listaVendas}" varStatus="id">
 				<tr>
 					<td>${v.nome}</td>
-					<td>${v.dtVenda}</td>
+					<td><fmt:formatDate pattern="yyyy/MM/dd" value="${v.dtVenda.time}"/></td>
 					<td>${v.descricao}</td>
 					<td>${v.valor}</td>
 					<td>${v.status}</td>
