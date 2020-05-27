@@ -45,19 +45,21 @@
 	<c:if test="${controle != null}">
 		<table>
 			<tr>
-				<th>ID</th>
 				<th>NOME</th>
-				<th>PREÇO</th>
+				<th>DATA VENDA</th>
 				<th>DESCRIÇÃO</th>
+				<th>VALOR DA VENDA</th>
+				<th>STATUS DA VENDA</th>
 				<th colspan="2">EDITAR</th>
 
 			</tr>
 			<c:forEach var="v" items="${listaVendas}" varStatus="id">
 				<tr>
-					<td>${v.codigo}</td>
 					<td>${v.nome}</td>
+					<td>${v.dtVenda}</td>
 					<td>${v.descricao}</td>
 					<td>${v.valor}</td>
+					<td>${v.status}</td>
 					<td class="edit-td"><a href="listar?codProd=${v.codigo}"><img
 							src="./img/editar.png"></a></td>
 					<td class="edit-td"><a href="remover?codProd=${v.codigo}"><img

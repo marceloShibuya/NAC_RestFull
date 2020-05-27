@@ -1,14 +1,16 @@
 package br.com.fiap.action;
  
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
- 
+import java.util.Date;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
- 
+
 import br.com.fiap.bo.VendaBO;
 import br.com.fiap.to.VendaTO;
  
@@ -89,12 +91,13 @@ public class VendaAction extends HttpServlet {
     protected void adicionar(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
  
         venda = new VendaTO();
-      //venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
+		
+        venda.setCodigo(Integer.parseInt(req.getParameter("txtCodVenda")));
         venda.setNome(req.getParameter("txtNomeCliente"));
-      //venda.setDtVenda(Calendar.getInstance());
+        venda.setDtVenda(Calendar.getInstance());
         venda.setDescricao(req.getParameter("txtDesc"));
         venda.setValor(Double.parseDouble(req.getParameter("txtVl")));
-      //venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
+        venda.setStatus(Boolean.parseBoolean(req.getParameter("txtSituacaoPag")));
         
         vbo = new VendaBO();
         vbo.cadastrar(venda);
