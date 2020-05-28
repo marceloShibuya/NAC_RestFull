@@ -14,6 +14,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	padding: 2em;
+	background: #000000;
 }
 
 h1, h2, h3 {
@@ -31,6 +32,7 @@ table {
 	padding: 1em;
 	width: 100%;
 	text-align: center;
+	background-color: #fff;
 }
 
 table th, td {
@@ -69,6 +71,7 @@ label {
 	justify-content: start;
 	color: #ed145b;
 	font-weight: bold;
+	margin-bottom: 5px;
 }
 
 input, textarea {
@@ -87,13 +90,15 @@ input:hover, textarea:hover {
 .cadastrar{
 	background-color: #ed145b;
 	color: #fff;
+	margin-top: 10px;
 }
 
 legend {
-	color: #000000;
+	color: #fff;
 	font-weight: bold;
 	font-size: 15pt;
 	font-family: sans-serif;
+	margin-bottom: 10px;
 }
 
 fieldset {
